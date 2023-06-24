@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="MyStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="nav-bar">
+	<div class="logo"><a href="a">My Web.com</a></div>
+		<ul class="links">
+		<li><a href="index.html">Home</a></li>
+				<li><a href="registration.html">Register</a></li>
+				<li><a href="dashbord.html">Dasboard</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+			
+			<div class="toggle-btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			<div class="dropdown-menu">
+			<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Register</a></li>
+				<li><a href="sign up">Sign up</a></li>
+				<li><a href="dashboard">Dasboard</a></li>
+			<li><a href="contact">Contact</a></li>	
+			
+			
+			</div>
+			
+			</div>
+	</header>
+	<main id="hero">
+		<h2>Wellcome To The Website</h2>
+	
+	</main>
+	
+	
+	<a href="a" class="action_bctn">Get started</a>
+	
+	
+	<script>
+		
+		const toggle =document.querySelector('.toggle-btn');
+		const toggleBtnicon = document.querySelector('.toggle-btn i');
+		const menuTBtn = document.querySelector('.dropdown-menu');
+		
+		
+		toggle.onclick = function(){
+			
+			menuTBtn.classList.toggle('open');
+			const  isOpen = menuTBtn.classList.contains('open');
+			toggleBtnicon.classList = isOpen
+			
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		
+			
+		}
+		
+		
+		
+	</script>
+</body>
+</html>

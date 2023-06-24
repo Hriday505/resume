@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="fisrt-box">
+		
+			<div class="text-box">
+				<h2>Wellcome</h2>
+</div>
+			<br>
+			<center>
+				<span>
+			<input type="text" placeholder="Username"  required>
+						<i class="fa fa-user" aria-hidden="true"></i>
+				</span>
+				<br>
+				<span>
+					<input type="text" placeholder="Email" required>
+					<i  style="margin-top:33px; font-size:27px;" class="fa fa-envelope" aria-hidden="true"></i>
+				</span>
+				<br>
+				<span>
+							
+			<input type="text" placeholder="Password"  required>
+<i style="margin-top:33px;"  class="fa fa-unlock-alt" aria-hidden="true"></i>
+					</span>
+				<br>
+				<button>Login</button>
+				<br>
+				<h3>dont have an account ?<a style="text-decoration: none;" href="signup.html"><span> Sign Up </span></a></h3>
+				<br>
+				<img class="icon wave1" width="50" height="50" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+				<img  class="icon wave2"  width="48" height="48" src="https://img.icons8.com/fluency/48/gmail-new.png" alt="gmail-new"/>
+				</center>
+		</div>
+		<br>
+		<div class="second-box">
+			<img src="pexels-creative-vix-9754.jpg" id="imo">
+		
+		
+		</div>
+	
+	</div>
+	
+	
+</body>
+	<script>
+	let imG=document.getElementById('imo');
+		let img=['265643-wilderness-wallpaper-top-free-wilderness-background.jpg','625646-mountain-winter-lake-water-reflection-rock-wallpaper.jpg','c2sBIxrD.png','pexels-creative-vix-9754.jpg']
+	
+		setInterval(function(){
+			
+			let random = Math.floor(Math.random()*4);
+			imG.src = img[random];
+		},1000);
+	</script>
+	
+</body>
+</html>
